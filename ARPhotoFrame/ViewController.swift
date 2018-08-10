@@ -23,9 +23,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             return AVPlayer()
         }
         
-        return AVPlayer(url: url)
+        let player = AVPlayer(url: url)
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil, queue: nil) { notification in
+            player.seek(to: CMTime.zero)
+            player.play()
+        }
+        return player
     }()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
