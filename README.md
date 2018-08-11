@@ -5,4 +5,6 @@ Sample code of tracking 2D image in AR mode that [was demonstrated](https://deve
 
 ## Preparation
 You have to print [sample image](https://github.com/sanchosrancho/ARPhotoFrame/blob/master/ARPhotoFrame/Assets.xcassets/Photos.arresourcegroup/cat.arreferenceimage/cat.png) or use another one to tracking in the app.
+
+It's important to print an image roughly of this size (or you'll need to adjust the physical size of the image in the project)
 ![](https://user-images.githubusercontent.com/833941/43996732-e34f8750-9dd1-11e8-8673-2f9b0795e401.png)
